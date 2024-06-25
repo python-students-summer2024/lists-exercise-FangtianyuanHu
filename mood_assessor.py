@@ -4,13 +4,7 @@ import os
 
 DIRECTORY = 'records'
 FILE_PATH = os.path.join(DIRECTORY, 'mood_diary.txt')
-MOOD_MAP = {
-    "happy": 2,
-    "relaxed": 1,
-    "apathetic": 0,
-    "sad": -1,
-    "angry": -2
-}
+MOOD_MAP = {"happy": 2, "relaxed": 1, "apathetic": 0, "sad": -1, "angry": -2}
 REVERSE_MOOD_MAP = {2: "happy", 1: "relaxed", 0: "apathetic", -1: "sad", -2: "angry"}
 
 def prompt_for_mood():
